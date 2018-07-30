@@ -1,6 +1,6 @@
 from mycroft import MycroftSkill
 from .alexa_pattern import AlexaLedPattern
-from pixels import pixels
+from .pixels import pixels
 
 
 class RespeakerFourHat(MycroftSkill):
