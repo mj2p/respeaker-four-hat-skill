@@ -7,7 +7,7 @@ class RespeakerFourHat(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
         self.pixels = pixels
-        self.pixels.pattern = AlexaLedPattern(show=pixels.show)
+        self.pixels.pattern = AlexaLedPattern(show=self.pixels.show)
 
     def initialize(self):
         self.add_event('recognizer_loop:wakeword', self.handle_wakeword)
